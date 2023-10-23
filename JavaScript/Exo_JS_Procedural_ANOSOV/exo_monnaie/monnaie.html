@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exo JS Monnaie</title>
+    <link rel="stylesheet" href="monnaie.css">
+</head>
+
+
+
+<body>
+    <h1>Bienvenue dans notre boutique</h1>
+    <main>
+        <section>
+            <h3>Caisse enregistreuse</h3>
+
+            <div class="containerFlex">
+                <div>
+                    <label for="aPayer">Saisissez le montant total à payer :</label>
+                    <input type="number" name="" id="aPayer">
+                </div>
+
+                <div>
+                    <label for="client">Saisissez le montant donné par le client :</label>
+                    <input type="number" name="" id="client">
+                </div>
+            </div>
+
+            <button type="submit" id="bouton">Rendre la monnaie</button>
+
+            <div id="monnaies">
+                <div id="monnaie10">
+                    <p id="resultatMonnaie10"></p>
+                </div>
+                <div id="monnaie5">
+                    <p id="resultatMonnaie5"></p>
+                </div>
+                <div id="monnaie1">
+                    <p id="resultatMonnaie1"></p>
+                </div>
+            </div>
+        </section>
+        <a href="../exo_heure/heure.html" class="exoPrecedent">Exercice 3 (Heure)</a>
+        <a href="../exo_email/email.html" class="exoSuivant">Exercice 5 (Email)</a>
+    </main>
+    <script src="monnaie.js"></script>
+</body>
+</html>

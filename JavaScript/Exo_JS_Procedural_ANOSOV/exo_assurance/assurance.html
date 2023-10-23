@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exo JS Assurance</title>
+    <link rel="stylesheet" href="assurance.css">
+</head>
+
+
+
+<body>
+    <h1>Bienvenue chez Assu3000</h1>
+    <main>
+        <section>
+            <h3>Voyons quel serait votre tarif</h3>
+
+            <label for="age">Age du conducteur :</label>
+            <input type="number" name="" id="age">
+
+            <label for="anciennetePermis">Ancienneté du permis :</label>
+            <input type="number" name="" id="anciennetePermis">
+
+            <label for="ancienneteAssurance">Ancienneté dans la compagnie d'assurance :</label>
+            <input type="number" name="" id="ancienneteAssurance">
+
+            <label for="nbrAccidents">Nombre d'accidents responsables :</label>
+            <input type="number" name="" id="nbrAccidents">
+
+            <button type="submit" id="bouton">Valider</button>
+            <p>(Dans quelques cas ca veut pas pour une raison obscure, par exemple 27 4 1 1,<br>alors que le score fait 0, donc tarif vert normalement.<br>Si t'arrive a trouver la raison, j'aimerai bien la connaitre... <br>a part ca, globalement ca foncionne)</p>
+
+            <div id="resultatAssurance"></div>
+        </section>
+        <a href="../exo_email/email.html" class="exoPrecedent">Exercice 5 (Email)</a>
+    </main>
+    <script src="assurance.js"></script>
+</body>
+</html>

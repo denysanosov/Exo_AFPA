@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exo JS Le Juste Prix</title>
+    <link rel="stylesheet" href="justeprix.css">
+</head>
+
+
+
+<body>
+    <div class="titreEtLogo">
+        <h1>Bienvenue dans l'émission</h1>
+        <img src="https://upload.wikimedia.org/wikipedia/fr/0/0e/Logo_Juste_Prix_%282015%29.jpg" alt="juste prix logo">
+    </div>
+    <main>
+        <section>
+            <div id="objetEnJeu">
+                <img src="" alt="">
+                <p></p>
+            </div>
+
+            <label for="prixSaisi">Proposez un prix entre 1 et 100 euros :</label>
+            <input type="number" name="" id="prixSaisi">
+
+            <p>
+                Trouvez le juste prix et tentez de gagner cet objet !<br>
+                Il vous reste <span id="afficheNbrTentatives">10</span> tentatives
+            </p>
+
+            <button type="submit" id="bouton">Valider</button>
+
+            <div id="resultat"></div>
+        </section>
+    </main>
+    <script src="justeprix.js"></script>
+</body>
+</html>

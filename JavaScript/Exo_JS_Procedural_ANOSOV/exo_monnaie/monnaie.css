@@ -1,0 +1,137 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    overflow: hidden;
+    background-color: #FDF5E6;
+}
+
+h1{
+    text-align: center;
+    margin-top: 2em;
+}
+
+main{
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+section{
+    min-width: 40%;
+    margin-top: 3%;
+    padding: 4em 1em;
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+}
+
+section h3{
+    margin-bottom: .5em;
+}
+
+.containerFlex{
+    display: flex;
+    justify-content: space-between;
+}
+
+.containerFlex>div{
+    display: flex;
+    flex-flow: column;
+}
+
+section label{
+    margin: 1em 0 .5em 0;
+}
+
+section input{
+    width: 90%;
+    margin: auto;
+    padding: .6em;
+    background-color: white;
+    border: 1px solid rgb(202, 202, 202);
+    border-radius: 2px;
+    text-align: center;
+}
+
+section button{
+    min-width: 10%;
+    margin: 2em auto 0 auto;
+    padding: .5em;
+    background-color: rgb(104, 160, 233);
+    border: none;
+    border-radius: 4px;
+    color: white;
+}
+
+section button:hover{
+    background-color: rgb(0, 0, 255);
+}
+
+#monnaies{
+    margin-top: 3em;
+    display: flex;
+    justify-content: space-between;
+}
+
+#monnaies p{
+    color: blue;
+    font-size: 2em;
+    font-weight: bold;
+    text-shadow: 1px 1px orange;
+}
+
+#monnaie10, #monnaie5, #monnaie1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#monnaie10{
+    width: 30%;
+    height: 100px;
+    background-image: url(https://fr.numista.com/catalogue/photos/zone_euro/63b57a5a4a6785.21303585-original.jpg);
+    background-size: contain;
+    text-align: center;
+}
+
+#monnaie5{
+    width: 30%;
+    height: 100px;
+    background-image: url(https://fr.numista.com/catalogue/photos/zone_euro/5ec9ae1217b222.29385233-original.jpg);
+    background-size: contain;
+}
+
+#monnaie1{
+    width: 30%;
+    height: 100px;
+    background-image: url(https://upload.wikimedia.org/wikipedia/fr/5/56/1_euro_face_commune_2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.exoPrecedent{
+    position: absolute;
+    left: 5%;
+    bottom: 5%;
+    text-decoration: none;
+    background-color: rgb(168, 255, 55);
+    padding: 1em;
+    border-radius: 10px;
+}
+
+.exoSuivant{
+    position: absolute;
+    right: 5%;
+    bottom: 5%;
+    text-decoration: none;
+    background-color: rgb(168, 255, 55);
+    padding: 1em;
+    border-radius: 10px;
+}
