@@ -1,0 +1,28 @@
+body{
+    background-color: rgb(192, 192, 192);
+}
+
+h1{
+    width: 20%;
+    margin: auto;
+    text-align: center;
+    margin-top: 2em;
+    padding: .5em;
+    background-color: rgb(167, 167, 167);
+    border: 1px dashed black;
+    border-radius: 10px;
+}
+
+div{
+    width: 20em;
+    margin: 4em auto;
+    padding: 2em;
+    box-shadow: 2px 2px 5px rgb(58, 124, 58);
+    background-color: rgb(87, 184, 87);
+    color: white;
+    text-align: center;
+}
+
+div img{
+    width: 20em;
+}
