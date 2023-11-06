@@ -1,0 +1,361 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url("/assets/img/fonddecran.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+a{
+    text-decoration: none;
+}
+
+.hidden{
+    display: none !important;
+}
+
+/* ---HEADER--- */
+
+header{
+    height: 10vh;
+    display: flex;
+    gap: 5%;
+    background-color: rgb(230, 230, 230);
+}
+
+header section:first-child{
+    width: 15%;
+    min-width: 13em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1{
+    padding: .15em .8em;
+    color: white;
+    background-color: rgb(92, 92, 92);
+    border: 2px solid black;
+    border-radius: 25px;
+}
+
+header section:last-child{
+    width: 80%;
+    display: flex;
+    align-items: end;
+}
+
+header nav{
+    height: 100%;
+    display: flex;
+    align-items: end;
+    gap: 2em;
+}
+
+header nav>div{
+    height: 85%;
+    padding: 1.5em 1em 1em 1em;
+    border: 1px solid rgb(230, 230, 230);
+    border-radius: 15px 15px 0 0;
+}
+
+.headerMesFilms nav>div:first-child{
+    border: 1px solid white;
+    background-color: white;
+}
+
+.headerRecherche nav>div:last-child{
+    border: 1px solid white;
+    background-color: white;
+}
+
+header nav a{
+    font-size: 1.2em;
+}
+
+header nav div:hover{
+    border: 1px solid white;
+    background-color: white;
+}
+
+/* ---MAIN-MESFILMS--- */
+
+.mainMesFilms section{
+    width: 85%;
+    margin: 6% auto;
+    padding: .5em 2.5em;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 15px;
+    display: flex;
+    flex-flow: column;
+}
+
+.mainMesFilms section h2{
+    letter-spacing: .05em;
+}
+
+#formulaireDajout{
+    margin-top: 1em;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: end;
+    gap: 2em;
+}
+
+#formulaireDajout div{
+    width: 20%;
+    display: flex;
+    flex-flow: column;
+}
+
+#formulaireDajout input{
+    height: 2em;
+    margin-top: .2em;
+    padding: 0 .1em 0 .5em;
+}
+
+#btnPopForm, #btnAjoutFilm{
+    width: 10em;
+    margin-top: 1em;
+    padding: .5em;
+    background-color: rgb(0, 119, 255);
+    color: white;
+    border: 1px solid rgb(0, 119, 255);
+    border-radius: 3px;
+}
+
+#btnPopForm:hover, #btnAjoutFilm:hover{
+    background-color: rgb(0, 105, 224);
+    border: 1px solid rgb(0, 105, 224);
+}
+
+#msgErreur {
+    color: red;
+}
+
+#msgValide{
+    width: 10%;
+    text-align: center;
+    color: white;
+    background-color: rgb(0, 189, 0);
+    border-radius: 10px;
+}
+
+#labelFiltrerPar{
+    margin-top: 1em;
+}
+
+.mainMesFilms section>select{
+    width: 8em;
+    margin-top: .5em;
+    padding: .5em .2em .5em 1em;
+    background-color: white;
+    color: rgb(83, 83, 83);
+    border: 1px solid rgb(184, 184, 184);
+    border-radius: 5px;
+}
+
+.mainMesFilms section>select:hover{
+    background-color: rgb(248, 248, 248);
+}
+
+.mainMesFilms hr{
+    margin-top: 2em;
+    border: 1px solid rgb(238, 238, 238);
+}
+
+.mainMesFilms table{
+    border-collapse: collapse;
+}
+
+.mainMesFilms thead{
+    border-bottom: 2px solid rgb(238, 238, 238);
+}
+
+.mainMesFilms th, .mainMesFilms td{
+    padding: .8em;
+    text-align: start;
+}
+
+.mainMesFilms tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+
+#tableMesFilms button{
+    width: 6.5em;
+    padding: .4em;
+    background-color: rgb(214, 0, 0);
+    color: white;
+    border: 1px solid rgb(214, 0, 0);
+    border-radius: 3px;
+}
+
+#tableMesFilms button:hover{
+    background-color: rgb(182, 0, 0);
+    border: 1px solid rgb(182, 0, 0);
+}
+
+/* ---MAIN-RECHERCHE--- */
+
+.mainRecherche{
+    display: flex;
+    flex-flow: column;
+    padding: 1em 7em 2em 7em;
+}
+
+.mainRecherche section:first-child{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: start;
+    align-items: end;
+    gap: 0 1.5em;
+    margin-bottom: 4em;
+}
+
+.mainRecherche section:first-child>div{
+    width: 20%;
+    min-width: 10em;
+    display: flex;
+    flex-flow: column;
+}
+
+.mainRecherche label{
+    color: white;
+    font-size: 1.5em;
+    margin-bottom: .2em;
+}
+
+.mainRecherche input, .mainRecherche select{
+    width: 100%;
+    min-width: 10em;
+    height: 2.5em;
+    padding: 0 .5em;
+}
+
+.mainRecherche button{
+    width: 8%;
+    min-width: 6.5em;
+    height: 2.5em;
+}
+
+.mainRecherche section:first-child .filtreRecherche{
+    width: 100%;
+}
+
+.filtreRecherche select{
+    width: 10%;
+}
+
+.mainRecherche section:nth-child(2){
+    display: flex;
+    flex-flow: row wrap;
+    gap: 3em 5%;
+    margin-bottom: 2em;
+}
+
+.articleFilm{
+    width: 30%;
+    padding: .8em;
+    background-color: white;
+    border: 5px solid #E3A1A0;
+    border-radius: 10px;
+}
+
+.articleFilm img{
+    width: 100%;
+    border-radius: 5px;
+}
+
+.articleTitre{
+    font-size: 1.3em;
+}
+
+.articleAnnee{
+    font-style: italic;
+}
+
+#pagination{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+#pagination a{
+    padding: .3em .6em;
+    background-color: white;
+    border: 1px solid black;
+    font-size: 1.5em;
+}
+
+/* ---RESPONSIVE--- */
+
+@media only screen and (max-width: 1000px) {
+    header nav>div{
+        padding: 2em 1em 1em 1em;
+    }
+
+    .mainRecherche{
+        padding: 1em 1em 1em 1em;
+    }
+
+    .mainRecherche section:nth-child(2){
+        gap: 1.5em 5%;
+    }
+
+    .mainMesFilms section{
+        min-width: 20em;
+        padding: .5em .5em;
+    }
+
+    .mainMesFilms table, .btnSupprimer{
+        font-size: 1.6vw;
+    }
+  }
+
+@media only screen and (max-width: 500px) {
+    header{
+        gap: 1%;
+    }
+
+    header h1{
+        font-size: 1em;
+    }
+
+    header section:first-child{
+        width: 15%;
+        min-width: 9em;
+    }
+
+    header nav{
+        gap: 1em;
+    }
+
+    header nav>div{
+        padding: 1.5em 1em 1em 1em;
+    }
+
+    header nav a{
+        font-size: .85em;
+    }
+
+    #formulaireDajout div{
+        width: 30%;
+    }
+
+    .mainMesFilms table{
+        font-size: .55em;
+    }
+
+    .mainRecherche section:nth-child(2){
+        gap: 1.5em 4%;
+    }
+
+    .mainRecherche article{
+        width: 48%;
+    }
+  }

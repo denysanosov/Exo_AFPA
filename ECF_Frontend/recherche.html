@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://steamuserimages-a.akamaihd.net/ugc/777366312385829180/66E749BEB483E886657A7EDFF571913B03A49FC6/" type="image/x-icon">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <script src="assets/js/rechercheapi.js" defer></script>
+    <title>ECF Vidéothèque</title>
+</head>
+
+
+
+<body>
+    <header class="headerRecherche">
+        <section>
+            <div data-tilt>
+                <h1>
+                    Vidéothèque
+                </h1>
+            </div>
+        </section>
+        <section>
+            <nav>
+                <div>
+                    <a href="index.html">Mes films</a>
+                </div>
+                <div>
+                    <a href="recherche.html">Recherche</a>
+                </div>
+            </nav>
+        </section>
+    </header>
+
+
+    <main class="mainRecherche">
+        <section>
+            <div>
+                <label for="rechercheTitre">Titre</label>
+                <input type="text" name="rechercheTitre" id="rechercheTitre">
+            </div>
+
+            <div>
+                <label for="rechercheAnnee">Année</label>
+                <input type="number" name="rechercheAnnee" id="rechercheAnnee">
+            </div>
+
+            <div>
+                <label for="rechercheType">Type</label>
+                <select name="rechercheType" id="rechercheType">
+                    <option value="" selected>-Choisir-</option>
+                    <option value="typeFilm">Film</option>
+                    <option value="typeEpisode">Épisode</option>
+                    <option value="typeSerie">Série</option>
+                    <option value="typeSaison">Saison</option>
+                </select>
+            </div>
+            <button id="btnRechercheFilm">Rechercher</button>
+            <div class="filtreRecherche">
+                <label for="">Filtrer par :</label>
+                <select name="selectRecherche" id="selectRecherche">
+                    <option value="selectRechercheTitre">Titre</option>
+                    <option value="selectRechercheAnnee">Année</option>
+                </select>
+            </div>
+        </section>
+
+        <section id="resultatRecherche" class="hidden">
+        </section>
+        
+        <nav id="pagination">
+                <button>1</button>
+                <button id="pageDeux">2</button>
+                <button id="pageTrois">3</button>
+                <button id="pageQuatre">4</button>
+                <button id="pageCinq">5</button>
+                <button id="pageSix">6</button>
+                <button id="pageSept">7</button>
+                <button id="pageHuit">8</button>
+                <button id="pageNeuf">9</button>
+                <button id="pageDix">10</button>
+        </nav>
+    </main>
+    <script type="module" src="node_modules/vanilla-tilt/src/vanilla-tilt.js"></script>
+</body>
+
+</html>
